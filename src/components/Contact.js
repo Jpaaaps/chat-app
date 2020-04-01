@@ -1,12 +1,9 @@
 import React from 'react';
 import "./Contact.css";
-
-const name = 'Melinda Coleman';
-const avatar = 'https://randomuser.me/api/portraits/women/19.jpg';
-const status = true; 
+import PropTypes from 'prop-types';
 
 
-function Contact() {
+function Contact({name, avatar, status}) {
 	return (
 	  <div className="Contact">
 
@@ -22,5 +19,13 @@ function Contact() {
 	  </div>
 	);
   };
+
+
+Contact.propTypes = {
+name: PropTypes.string.isRequired,
+avatar: PropTypes.string.isRequired,
+status: PropTypes.bool.isRequired
+}
+
 
 export default Contact;
