@@ -1,5 +1,7 @@
 import React from 'react';
-import Contact from "./components/Contact";
+import ContactList from './components/ContactList';
+
+//import Contact from "./components/Contact";
 
 const user1 = {
   name:'Melinda Coleman',
@@ -22,9 +24,7 @@ const user3 ={
 function App() {
   return (
     <div className="App">
-     <Contact {...user1}/>
-     <Contact {...user2}/>
-     <Contact {...user3}/>
+     <ContactList/>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import "./Contact.css";
 import PropTypes from 'prop-types';
 
 
-function Contact({name, avatar, status}) {
+function Contact({name, avatar, online}) {
 	return (
 	  <div className="Contact">
 
@@ -12,8 +12,8 @@ function Contact({name, avatar, status}) {
 			<p className="name">{name}</p>
 
 			<div className="status">
-				<div className={status ? "status-online" : "status-offline"}></div>
-				<div className="status-text">{status ? 'Online' : 'Offline'}</div>
+				<div className={online ? "status-online" : "status-offline"}></div>
+				<div className="status-text">{online ? 'Online' : 'Offline'}</div>
 			</div>
 		</div>
 	  </div>
