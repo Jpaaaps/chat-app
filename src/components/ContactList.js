@@ -27,8 +27,8 @@ const users = [
 		avatar: 'https://randomuser.me/api/portraits/women/55.jpg',
 		online: true
 	}
-];
 
+];
 const ContactList = () => (
 	<div>
 		{users.map(user =>(
